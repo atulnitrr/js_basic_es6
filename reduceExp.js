@@ -5,7 +5,7 @@ function unique(array) {
       return n === number;
     });
 
-    if ( !present) {
+    if (!present) {
       previous.push(number);
     }
 
