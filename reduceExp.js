@@ -1,3 +1,56 @@
+function unique(array) {
+
+  return array.reduce(function(previous, number) {
+    var present = previous.some(function(n){
+      return n === number;
+    });
+
+    if ( !present) {
+      previous.push(number);
+    }
+
+    return previous;
+      
+  }, []);
+}
+
+var numbers = [1, 1, 2, 3, 4, 4];
+var res = unique(numbers);
+console.log(res);
+
+
+var desks = [
+  { type: 'sitting' },
+  { type: 'standing' },
+  { type: 'sitting' },
+  { type: 'sitting' },
+  { type: 'standing' }
+];
+
+var deskTypes = desks.reduce(function(tally, desk) {
+    if (desk.type === "sitting") {
+      tally.sitting += 1;
+    
+    }  
+    if (desk.type === "standing") {
+      tally.standing += 1;
+    } 
+
+    return tally;
+
+}, { sitting: 0, standing: 0 });
+
+console.log(deskTypes);
+
+
+var trips = [{ distance: 34 }, { distance: 12 } , { distance: 1 }];
+
+var totalDistance = trips.reduce(function(sum, trip) {
+  return sum + trip.distance;
+}, 0);
+
+console.log(totalDistance);
+
 
 function balanceParn(string) {
   return !string.split("").reduce(function(previous, char) {
