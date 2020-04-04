@@ -1,12 +1,12 @@
-var number = 10;
-console.log(number);
+// var number = 10;
+// console.log(number);
 
 
 
 
-test();
+// test();
 
-function test() {
-  console.log("test called ")
-}
+// function test() {
+//   console.log("test called ")
+// }
 
