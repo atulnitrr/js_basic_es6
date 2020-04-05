@@ -10,7 +10,6 @@ const monster = new Monster({name: "gamma"});
 
 
 class Snake extends Monster {
-
   constructor(options) {
     super(options);
   }
