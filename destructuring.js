@@ -1,3 +1,32 @@
+const numbers = [1, 2, 3];
+
+function double(rest) {
+    const [first, ...remin] = rest;
+    if (remin.length === 0) {
+      return [2*first];
+    } else {
+      return [2*first, ...double(remin)];
+    }
+}
+
+const doubleResponsne = double([4, 2, 3]);
+console.log(doubleResponsne);
+
+
+
+
+const classes = [
+  [ 'Chemistry', '9AM', 'Mr. Darnick' ],
+  [ 'Physics', '10:15AM', 'Mrs. Lithun'],
+  [ 'Math', '11:30AM', 'Mrs. Vitalis' ]
+];
+
+const classesAsObject = classes.map(([subject, time, teacher]) => {
+  return {subject, time, teacher};
+});
+
+console.log(classesAsObject);
+
 
 const points = [
   [3, 4],
