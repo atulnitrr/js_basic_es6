@@ -1,23 +1,47 @@
 
 
 
-outet();
+example6();
 
-var a_ = 10;
-
-function outet() {
-  var a_ = 20;
-  function inner() {
-    var a_ = 30;
-    console.log("inner " + a_);
-    
+function example6() {
+  for(var i = 0; i<10; i++) {
+      if(i > 5) {
+        var test = i * 10;
+      }
   }
-
-  inner();
-  console.log("Outert " + a_);
+  console.log("i -->" + i + " test --> " + test);
 }
 
-console.log("outer " + a_);
+
+// var a = 20;
+
+// function gd(a) {
+//   a = 30;
+//   console.log("Local --> " + a);
+  
+// }
+
+// gd();
+// console.log("Global --> " + a);
+
+
+
+// outet();
+// var a_ = 10;
+
+// function outet() {
+//   var a_ = 20;
+//   function inner() {
+//     var a_ = 30;
+//     console.log("inner " + a_);
+    
+//   }
+
+//   inner();
+//   console.log("Outert " + a_);
+// }
+
+// console.log("outer " + a_);
 
 
 
