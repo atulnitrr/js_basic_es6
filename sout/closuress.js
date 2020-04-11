@@ -2,6 +2,18 @@ console.log("closuress js -->");
 
 
 
+function multiply(price) {
+  return function(count) {
+    return  price * count; 
+  }
+}
+
+const totalCost = multiply(6)(2);
+console.log(totalCost);
+
+
+
+
 function validate(password) {
   var attempTcount = 0;
 
