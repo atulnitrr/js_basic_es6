@@ -6,6 +6,36 @@ const btn = document.getElementById("button1");
 
 // ---
 
+
+// ----
+/*
+function myBind(funct, thisArg) {
+  return function() {
+    funct.apply(thisArg, arguments);
+  }
+}
+
+const person = {
+  firstName: "rahul", 
+  printName: function() {
+    console.log(`${this.firstName} + print`);
+    
+  }
+}
+
+
+const mb = myBind(performance.printName, person);
+mb("hello")
+
+function myFunction(one, two) {
+  console.log(arguments); 
+}
+
+myFunction("one", "tow", "three", "four")
+
+*/
+
+/*
 const person = {
   firsName: "mandela", 
   printName: function() {
@@ -15,6 +45,8 @@ const person = {
 }
 
 btn.addEventListener("click", person.printName.bind(person));
+
+*/
 
 //-----
 // Example 7 
