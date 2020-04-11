@@ -2,6 +2,9 @@ console.log("call back java script --> ");
 
 
 
+
+
+/*
 function dogBreed() {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "https://dog.ceo/api/breeds/list/all")
@@ -23,19 +26,16 @@ function dogBreed() {
           
         }
       }
-      xhrBreed.send(null);
-
-
-      
+      xhrBreed.send(null); 
     }
   }
-
   xhr.send(null);
 }
 
-
 dogBreed();
 
+
+*/
 
 /*
 function calcualateSqure(number, callback) {
