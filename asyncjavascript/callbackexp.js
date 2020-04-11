@@ -7,13 +7,33 @@ function dogBreed() {
   xhr.open("GET", "https://dog.ceo/api/breeds/list/all")
   xhr.onreadystatechange = function() {
     if(xhr.readyState === XMLHttpRequest.DONE) {
-      console.log(xhr.responseText);
+      const response = JSON.parse(xhr.responseText);
+      console.log(response);
+      const breeds = Object.keys(response.message);
+      console.log(breeds);
+      const firstBreed = breeds[0];
+      const xhrBreed = new XMLHttpRequest();
+      xhrBreed.open("GET", `https://dog.ceo/api/breed/${firstBreed}/images`);
+      xhrBreed.onreadystatechange = function() {
+        if(xhrBreed.readyState === XMLHttpRequest.DONE) {
+          const brredValue = xhrBreed.responseText;
+          console.log("Breed valulee");
+          console.log(brredValue);
+
+          
+        }
+      }
+      xhrBreed.send(null);
+
+
       
     }
   }
 
   xhr.send(null);
 }
+
+
 dogBreed();
 
 
