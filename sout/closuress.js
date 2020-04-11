@@ -2,6 +2,8 @@ console.log("closuress js -->");
 
 
 
+
+
 function multiply(price) {
   return function(count) {
     return  price * count; 
