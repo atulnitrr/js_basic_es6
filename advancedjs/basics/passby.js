@@ -1,6 +1,30 @@
 console.log("pass by js");
 "use strict"
 
+
+
+/*
+function login(method, ...options) {
+  console.log(method);
+  console.log(options);
+  
+}
+const ll = [1, 2, 3, 4];
+login("facebook", ll);
+*/
+
+/*
+function sum(a, b) {
+  console.log(arguments);
+  
+  return a +  b;
+}
+const sumRes = sum(2, 3, 4, 5, 6);
+console.log(`sum : ${sumRes}`);
+
+*/
+
+/*
 var a = 1;
 var b = {};
 function fun_ab(x, y) {
@@ -10,6 +34,7 @@ function fun_ab(x, y) {
 
 fun_ab(a, b);
 console.log(" a : " + a + " b" + JSON.stringify(b));
+*/
 
 
 /*
