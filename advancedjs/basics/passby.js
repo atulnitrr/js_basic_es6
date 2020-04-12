@@ -2,6 +2,13 @@ console.log("pass by js");
 "use strict"
 
 
+/*
+const array1 = [1, 2, 3];
+const array2 = [3, 4, 4, ...array1];
+console.log(array2);
+
+*/
+
 
 /*
 function login(method, ...options) {
