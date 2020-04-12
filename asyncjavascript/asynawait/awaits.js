@@ -1,6 +1,51 @@
 console.log("await function --> ");
+function printOne() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("print one done ")
+    } , 1000);
+  })
+}
+
+function printTwo() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("print two done")
+    } , 1000);
+  })
+}
 
 
+
+async function inParallel() {
+  const res1 = printOne();
+  const res2 = printTwo();
+  const value1 = await res1;
+  const value2 = await res2;
+  console.log(value1, value2);
+  
+}
+inParallel();
+
+/*
+async function oneByOne() {
+  let res = await printOne();
+  let res2 = await printTwo();
+  console.log(res);
+  console.log(res2);
+  
+}
+oneByOne();
+*/
+
+/*
+printOne()
+.then(vale => console.log(vale))
+
+printTwo()
+.then(vale => console.log(vale))
+ 
+*/
 
 // async await example
 
