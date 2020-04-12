@@ -2,10 +2,29 @@ console.log("pass by js");
 "use strict"
 
 
+function max(...vars) { return Math.max(...vars) };
+console.log(max(1,3,2));
+;
+
+
+var fruits = ["Apples", "Oranges", "Bananas"];
+console.log(["Mangoes", ...fruits]);
+
+function foo(strings) { 
+  console.log(strings[1]) 
+};
+foo`moo${foo}foo`
+
+
+var moo = "foo";
+console.log(`hello\n${moo}
+how are you?`);
 
 
 
 
+
+/*
 function h1(strings, ...values) {
 
   let body = "";
@@ -19,7 +38,7 @@ const name = "atul";
 const place = "hyd"
 console.log(h1`My name is ${name} , place is ${place}`);
 ;
-
+*/
 
 /*
 
