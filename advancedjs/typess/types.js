@@ -1,8 +1,15 @@
 "use strict";
 console.log("types js");
 
+console.log(NaN == "1");
 
+if (undefined == null) {
+  console.log("Moo")
+} else {
+  console.log("Zoo")
+}
 
+// if a !== a then a is sure a NaN
 var a = NaN;
 console.log(a !== a);
 a = 34
