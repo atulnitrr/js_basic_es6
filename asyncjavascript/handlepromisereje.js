@@ -18,7 +18,8 @@ function printPromiseData(newPromise) {
 // printPromiseData(promise);
 
 const randomString = "some data";
-printPromiseData(Promise.reject(randomString));
+// printPromiseData(Promise.reject(randomString));
+printPromiseData(Promise.reject(new Error("data")));
 
 // const randomString = "sss";
 // printPromiseData(Promise.resolve(randomString));
