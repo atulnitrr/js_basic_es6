@@ -1,6 +1,53 @@
+"use strict"
 console.log("this keyword");
 
 
+
+
+
+/*
+const person = {
+  firstName: "firstName",
+  sayMyName() {
+    console.log(this);
+    function sayOtherNamee() {
+      console.log(this); 
+    }
+
+    sayOtherNamee.call(this);
+  
+  }
+}
+
+person.sayMyName();
+
+*/
+
+/*
+function sayName() {
+  console.log(this);
+}
+
+sayName.call(1)
+sayName.call({})
+
+*/
+
+
+// both way of calling are same thing
+/*
+sayName();
+sayName.call();
+*/
+
+/*
+sayName.moot = "moot";
+console.log(sayName.name);
+*/
+
+
+
+/*
 
 const person = {
   firstName: "atul", 
@@ -21,6 +68,8 @@ const person = {
 }
 
 person.sayMyName();
+
+*/
 
 // this pointing to obhect instead of global
 
