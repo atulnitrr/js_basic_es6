@@ -1,9 +1,20 @@
-"use strict"
+// "use strict"
 console.log("this keyword");
 
 
+/*
+function testFun(a, b, c) {
+  console.log(this);
+  console.log(a);
+  console.log(b);
+  console.log(c);
+  
+}
 
+// testFun.call(67,  2, 3, 4);
+testFun.apply(56,  [2, 3, 4]);
 
+*/
 
 /*
 const person = {
