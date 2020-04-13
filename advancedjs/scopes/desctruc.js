@@ -1,11 +1,46 @@
 console.log("console log dstructing" );
 
 
+const array = [1, 2, 3];
+
+// for of loop. 
+
+for(let value of array) {
+  console.log(value);
+  console.log(typeof(value));
+}
+
+
+/*
+const obj = {a: 1, b: 3};
+for(let prop in obj) {
+  console.log(prop);
+  console.log(obj['prop']);
+  
+}
+*/
+
+/*
+array.forEach(value => {
+  console.log(value);
+  // can put break statement here.
+  // also you can not put return over here. 
+  // break;
+})
+*/
+
+// one way of looping
+/*
+for(let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+  
+}
+*/
+
 
 function f({x = 0}) {
   console.log(x);
 }
-
 f({})
 
 /*
