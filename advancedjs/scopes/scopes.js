@@ -1,6 +1,7 @@
 "use strict";
 console.log("scope js");
 
+/*
 const a = 1;
 const b = 2;
 a = b;
@@ -36,7 +37,7 @@ console.log(foo[1]());
 console.log(foo[2]());
 
 
-
+*/
 // out put 10, 10 , 10 
 /*
 var foo = [];
