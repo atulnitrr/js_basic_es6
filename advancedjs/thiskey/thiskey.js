@@ -2,6 +2,105 @@
 console.log("this keyword");
 
 
+
+const people = {
+  firstName: "atul", 
+  sayMyName: function() {
+    console.log(this);
+    console.log(`${this.firstName}`); 
+    setTimeout(() => {
+      console.log("inside");
+      console.log(this);
+      console.log(`${this.firstName}`); 
+    }, 1000)
+  }
+}
+people.sayMyName();
+
+
+/*
+
+// replace inside this with fat arrow function 
+const people = {
+  firstName: "atul", 
+  sayMyName: function() {
+    console.log(this);
+    console.log(`${this.firstName}`); 
+    // this below function will take from where it is defined
+    setTimeout(() => {
+      console.log("inside");
+      console.log(this);
+      console.log(`${this.firstName}`); 
+    }, 1000)
+  }
+}
+people.sayMyName();
+
+*/
+
+/*const people = {
+  firstName: "atul", 
+  sayMyName: function() {
+    console.log(this);
+    console.log(`${this.firstName}`); 
+    setTimeout(function() {
+      console.log("inside");
+      console.log(this);
+      console.log(`${this.firstName}`); 
+    }, 1000)
+  }
+}
+people.sayMyName();
+const people = {
+  firstName: "atul", 
+  sayMyName: function() {
+    console.log(this);
+    console.log(`${this.firstName}`); 
+    setTimeout(function() {
+      console.log("inside");
+      console.log(this);
+      console.log(`${this.firstName}`); 
+    }, 1000)
+  }
+}
+people.sayMyName();
+
+*/
+
+
+
+/*
+const people = {
+  firstName: "atul", 
+  sayMyName() {
+    console.log(this);
+    console.log(`${this.firstName}`);
+  }
+}
+
+people.sayMyName();
+
+const say = people.sayMyName;
+say();
+
+*/
+
+
+
+/*
+let add = (a, b) => a + b;
+
+
+setTimeout(function() {
+  console.log("timeout function ");
+} , 1000)
+
+setTimeout(() => console.log("timeout")
+  , 1000);
+
+  */
+
+/*
 var peopel = {
   firstName: "Atul", 
   sayName() {
@@ -16,6 +115,8 @@ var peopel = {
 }
 
 peopel.sayName();
+*/
+
 /*
 const dummy = function() {
   console.log(this);  
