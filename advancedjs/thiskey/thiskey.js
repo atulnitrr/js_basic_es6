@@ -2,6 +2,41 @@
 console.log("this keyword");
 
 
+var peopel = {
+  firstName: "Atul", 
+  sayName() {
+    console.log(this);
+    console.log(`${this.firstName}`);
+    const other = function() {
+      console.log(this);
+      console.log(`${this.firstName}`);
+    }.bind(this);
+    other();   
+  }
+}
+
+peopel.sayName();
+/*
+const dummy = function() {
+  console.log(this);  
+}.bind(12)
+var obj = {
+  fun3: dummy
+}
+
+obj.fun3();
+
+*/
+
+/*
+// This will print 12 
+const dummy = function() {
+  console.log(this);  
+}.bind(12)
+dummy();
+
+*/
+
 /*
 function testFun(a, b, c) {
   console.log(this);
