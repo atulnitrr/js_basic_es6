@@ -1,8 +1,67 @@
 "use strict";
 console.log("Object orientation-->");
 
+function Person() {
+
+}
+
+Person.prototype.full_name = function () {
+  console.log("full name");
+  
+}
+
+function Prof() {
+
+}
+
+Prof.prototype = Object.create(Person.prototype);
+
+Prof.prototype.full_name_p = function() {
+  console.log("full name p");
+  
+}
+
+const prf = new Prof();
+prf.full_name();
+console.log(prf);
+
+prf.full_name_p();
 
 
+
+/*
+
+function Person(first_name, last_name) {
+  this.first_name = first_name;
+  this.last_name = last_name;
+};
+
+Person.prototype.full_name = function() {
+  return `${this.first_name} --> ${this.last_name}`;
+};
+
+Prof.prototype = Object.create(Person.prototype);
+
+function Prof(honor, first_name, last_name) {
+  Person.call(this, first_name, last_name);
+  this.honor = honor;
+};
+
+
+
+Prof.prototype.full_occp = function() {
+  return `${this.honor} ${this.full_name} ${this.full_name}`
+}
+
+
+
+const ppp = new Prof("Dr", "Atul", "Kumar");
+console.log(ppp.full_occp());
+// console.log(ppp.full_name());
+
+
+
+*/
 
 /*
 function Person(first_name, last_name) {
