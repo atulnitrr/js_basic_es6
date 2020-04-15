@@ -2,6 +2,121 @@
 console.log("Object orientation-->");
 
 
+
+var Device = {
+  kind:"Music Player"
+};
+var AppleProduct = Object.create(Device,
+ {
+  name: "iPod"
+});
+var purchase = Object.create(AppleProduct);
+console.log(purchase.name);
+
+/*
+function Device(kind) {
+  this.kind =  kind;
+}
+Device.prototype.printKind = function () {
+  console.log(this.kind);
+};
+var product = new Device("music player");
+product.printKind();
+*/
+
+/*
+function Device(kind) {
+  this.kind =  kind;
+  this.printKind = function () {
+    console.log(kind)
+  }
+}
+var product = new Device("music player");
+
+product.kind = "radio";
+product.printKind();
+console.log(product);
+
+*/
+
+
+
+/*
+function Device(kind) {
+  this.kind =  kind;
+  this.printKind = function () {
+    console.log(this.kind)
+  }
+}
+var product = new Device("music player");
+product.printKind();
+
+*/
+
+
+/*
+class Person {
+  constructor(first_name, last_name) {
+    this.first_name = first_name;
+    this.last_name = last_name;
+  }
+
+  get firstName() {
+    return this.first_name;
+  }
+
+  set firstName(name) {
+    if(name === "") {
+      console.error("eEm pty data");
+      
+    } else {
+      this.first_name = name;
+    }
+  }
+
+  full_name() {
+    return `${this.first_name} ${this.last_name}`;
+  }
+
+  dummyName() {
+    console.log("dummy data");
+
+  }
+
+  whoAreYou() {
+    return `I am ${this.firstName} ${this.last_name}`
+  }
+}
+
+class Student extends Person {
+  constructor(first_name, last_name, sub) {
+    super(first_name, last_name)
+    this.sub = sub;
+  }
+
+  whoAreYou() {
+    return `${super.whoAreYou()} and studying ${this.sub}`
+  }
+}
+
+const stud = new Student("tom", "hanks", "math");
+console.log(stud);
+console.log(stud.whoAreYou());
+
+
+*/
+
+/*
+const atul = new Person("akk", "kum ar");
+console.log(atul.firstName);
+atul.firstName = "new changed"
+console.log(atul);
+console.log(atul.full_name());
+atul.dummyName();
+
+*/
+
+
 /*
 const dummy = {
   full_name: function() {
