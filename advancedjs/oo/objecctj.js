@@ -1,6 +1,82 @@
 "use strict";
 console.log("Object orientation-->");
 
+
+/*
+const dummy = {
+  full_name: function() {
+    console.log("hello --> ");
+    
+    return "hello atul";
+  }
+}
+
+const inDummy = Object.create(dummy, {
+  first_name: {
+    value: "data"
+  }
+})
+
+console.log(dummy);
+console.log(inDummy);
+inDummy.full_name();
+*/
+
+/*
+const Person = {
+  full_name: function() {
+    return `${this.first_name} ${this.last_name}`
+  }
+}
+
+function PersonFactory(first_name, last_name) {
+  const per = Object.create(Person);
+  per.first_name = first_name;
+  per.last_name = last_name;
+  return per;
+}
+
+const atul = PersonFactory("atul", "kummmmmrr")
+console.log(atul);
+console.log(atul.full_name());
+*/
+
+/*
+const Person = {
+  full_name: function() {
+    return `${this.first_name} ${this.last_name} `
+  }
+} 
+
+const atul = Object.create(Person, {
+  first_name: {
+    value: "atul"
+  },
+  last_name: {
+    value: "kumar"
+  }
+});
+
+console.log(atul);
+console.log(atul.full_name());
+
+
+*/
+
+
+
+
+/*
+
+const emp = new Empoyee("atul", "kumar")
+
+console.log(emp);
+console.log(emp.full_name());
+*/
+
+
+/*
+
 function Person() {
 
 }
@@ -27,7 +103,7 @@ console.log(prf);
 
 prf.full_name_p();
 
-
+*/
 
 /*
 
