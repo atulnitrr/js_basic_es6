@@ -2,6 +2,28 @@ console.log("async programming ");
 
 
 
+function doAsync(callback) {
+  setTimeout(() => {
+      console.log("Async task calling callback ");
+      callback();  
+  }, 0)
+}
+
+doAsync(() => {
+  doAsync(()=> {
+    doAsync(()=> {
+      doAsync(() => {
+        doAsync(() =>{
+          doAsync(()=>{
+            doAsync(() => {
+              
+            })
+          })
+        })
+      })
+    })
+  })
+})
 
 
 /*
