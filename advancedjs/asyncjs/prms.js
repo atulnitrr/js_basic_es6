@@ -1,6 +1,134 @@
 console.log("prmoise js");
 
+var asyncFunction = async function() {
+  return "done";
+};
+asyncFunction().then(v => console.log(v));
 
+
+
+
+/*
+const doAsyncTask = () => Promise.resolve("done");
+ 
+function foo() {
+    let x = await doAsyncTask();
+    return x; 
+}
+ 
+console.log(foo());
+
+Promise.resolve("done")
+  .then(val => {
+    console.log(val);
+  })
+  .then(val => console.log(val));
+*/
+/*
+Promise.resolve("done")
+  .then(val => {
+    throw "fail";
+  })
+  .then(val => console.log(val))
+  .catch(err => console.error(err));
+  */
+
+  /*
+let p = Promise.resolve();
+p.then(() => console.log("Resolved"))
+*/
+
+/*
+function doAsyncTask(cb) {
+  cb();
+}
+doAsyncTask(function() { console.log(message) });
+ 
+let message = "Callback Called";
+*/
+
+
+/*
+
+async function name() {
+  console.log(1);
+  
+}
+
+async function main() {
+  name();
+  console.log("main");
+  
+}
+main();
+
+console.log("done");
+*/
+
+
+/*
+const promise = () => Promise.reject("Rejected");
+
+(async () => {
+  try {
+    let val = await promise();
+  } catch (e) {
+      console.error(e);
+      
+  }
+})();
+
+*/
+
+
+// async function retuns Promise 
+/*
+const  asynFun = async () => 3;
+asynFun().then(val => console.log(val))
+*/
+
+
+/*
+const doAsync = () => Promise.resolve("done");
+
+(async function() {
+  let val = await doAsync();
+  console.log(val);
+  console.log("done 2");
+  
+  
+})();
+
+console.log("here");
+
+*/
+
+/*
+async function test() {
+  let val = await doAsync();
+  console.log(val);
+  
+}
+*/
+
+// doAsync().then((val) => console.log(val)
+// )
+
+
+
+
+// this will fist print done , and then here. 
+/*
+const doAsync = () =>  Promise.resolve("Done");
+doAsync().then(val => console.log(val))
+
+console.log("here data --> ");
+
+*/
+
+
+
+/*
 Promise.resolve("done")
 .then(() => console.log(message)
 )
@@ -24,7 +152,7 @@ let promises = [doAsync(300), doAsync(200), doAsync(100) ];
 Promise.all(promises).then(val =>  console.log((val))
 )
 
-
+*/
 
 
 /*
