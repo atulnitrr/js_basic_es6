@@ -1,6 +1,66 @@
 console.log("prmoise js");
 
 
+Promise.resolve("done")
+.then(() => console.log(message)
+)
+
+let message = "message dmaa";
+
+
+
+function doAsync(delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout( () => resolve(delay) , delay)
+  })
+}
+
+
+doAsync(1000)
+.then(val => console.log(val))
+
+let promises = [doAsync(300), doAsync(200), doAsync(100) ];
+
+Promise.all(promises).then(val =>  console.log((val))
+)
+
+
+
+
+/*
+
+Promise.resolve("rejected")
+.catch((data) => {
+  console.log(data);
+})
+.finally(() => {
+  console.log("finally hanlder ");
+  
+})
+
+*/
+
+// forking 
+/*
+ const p = Promise.resolve("DOne");
+ p.then(varl => console.log(varl))
+ p.then(val2 => console.log(val2))
+/*
+
+ // chaning
+/*
+Promise.resolve("done")
+.then(val => {
+  console.log(val);
+  return "done2"
+})
+.then((val) => {
+console.log(val);
+})
+*/
+
+
+/*
 function doAsync() {
   return Promise.resolve();
 }
@@ -12,6 +72,7 @@ doAsync().then(() => console.log(data)
 
 let data = "dummy data";
 
+*/
 
 /*
 let promiseResolved = Promise.resolve("resolved");
